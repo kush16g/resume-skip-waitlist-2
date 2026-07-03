@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Skip — Skip the Hunt. Land the Job.</title>
+  <meta name="description" content="Resume Skip scans jobs that match your dream role, rewrites your resume for each one, and applies for you. Get 5 hours of your day back." />
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Inter+Tight:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- noise overlay -->
+  <svg class="noise" aria-hidden="true">
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"></feTurbulence>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#noiseFilter)"></rect>
+  </svg>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="nav__brand">
+      <img src="assets/logo.png" alt="Resume Skip logo" class="nav__logo" />
+      <span>RESUME<span class="nav__brand-accent">SKIP</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#waitlist" class="btn btn--primary btn--sm nav__cta">Join waitlist</a>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">APPLYING FOR JOBS IS A JOB. WE'RE ENDING THAT.</p>
+      <h1 class="hero__headline">
+        SKIP THE HUNT.<br />
+        <span class="hero__headline-accent">LAND THE JOB.</span>
+      </h1>
+      <p class="hero__sub">
+        Tell us your dream role. Resume Skip scans the market, rewrites your resume for every single
+        opening, and submits the application &mdash; while you get five hours of your day back.
+      </p>
+
+      <form class="waitlist-form waitlist-form--hero" data-waitlist-form>
+        <label class="sr-only" for="hero-email">Email address</label>
+        <input
+          id="hero-email"
+          class="waitlist-form__input"
+          type="email"
+          name="email"
+          placeholder="YOUR@EMAIL.COM"
+          required
+          autocomplete="email"
+        />
+        <button type="submit" class="btn btn--primary waitlist-form__submit">
+          Join the waitlist
+        </button>
+      </form>
+      <p class="waitlist-form__note" data-waitlist-note>No spam. One email when we launch. That's it.</p>
+
+      <div class="hero__bg-number" aria-hidden="true">05</div>
+    </section>
+
+    <!-- STATS MARQUEE -->
+    <div class="marquee marquee--fast" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">5 HRS SAVED / DAY <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">1 TAILORED RESUME / JOB <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">0 COVER LETTERS WRITTEN BY YOU <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">AUTO-APPLIED WHILE YOU SLEEP <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">5 HRS SAVED / DAY <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">1 TAILORED RESUME / JOB <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">0 COVER LETTERS WRITTEN BY YOU <span class="marquee__dot">&bull;</span></span>
+        <span class="marquee__item">AUTO-APPLIED WHILE YOU SLEEP <span class="marquee__dot">&bull;</span></span>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="section__head">
+        <p class="eyebrow">THE PROCESS</p>
+        <h2 class="section__title">THREE STEPS.<br />ZERO GRIND.</h2>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-card__num" aria-hidden="true">01</span>
+          <h3 class="step-card__title">TELL US THE TARGET</h3>
+          <p class="step-card__desc">Name, number, your current resume, and the job you actually want. Two minutes, once.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-card__num" aria-hidden="true">02</span>
+          <h3 class="step-card__title">WE HUNT &amp; TAILOR</h3>
+          <p class="step-card__desc">We scan the market for roles that match your spec and rewrite your resume for each one &mdash; not a template swap, a real rewrite.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-card__num" aria-hidden="true">03</span>
+          <h3 class="step-card__title">WE APPLY. YOU INTERVIEW.</h3>
+          <p class="step-card__desc">Every matching role gets submitted on your behalf. You show up for interviews, not for job boards.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section section--tight" id="benefits">
+      <div class="section__head">
+        <p class="eyebrow">WHY IT WORKS</p>
+        <h2 class="section__title">YOUR TIME BACK.<br />YOUR ODDS UP.</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <span class="benefit-card__num" aria-hidden="true">5H</span>
+          <h3 class="benefit-card__title">5 hours back, daily</h3>
+          <p class="benefit-card__desc">The average job hunt eats a part-time job's worth of hours every week. We take that shift.</p>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-card__num" aria-hidden="true">1:1</span>
+          <h3 class="benefit-card__title">One resume per job</h3>
+          <p class="benefit-card__desc">Every application gets a resume rewritten against that specific listing, not a generic version mailed 200 times.</p>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-card__num" aria-hidden="true">24/7</span>
+          <h3 class="benefit-card__title">Always hunting</h3>
+          <p class="benefit-card__desc">New postings get caught and applied to the moment they go live &mdash; including the ones you'd never have found scrolling at midnight.</p>
+        </article>
+        <article class="benefit-card">
+          <span class="benefit-card__num" aria-hidden="true">0</span>
+          <h3 class="benefit-card__title">Zero copy-paste</h3>
+          <p class="benefit-card__desc">No more retyping your history into twelve different application portals. We handle the submission end to end.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PAIN POINTS MARQUEE (slower) -->
+    <div class="marquee marquee--slow marquee--invert" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">NO MORE REFRESHING LINKEDIN AT 2AM</span>
+        <span class="marquee__item">NO MORE GENERIC RESUMES</span>
+        <span class="marquee__item">NO MORE FORGOTTEN FOLLOW-UPS</span>
+        <span class="marquee__item">NO MORE 40 TABS OF JOB BOARDS</span>
+        <span class="marquee__item">NO MORE REFRESHING LINKEDIN AT 2AM</span>
+        <span class="marquee__item">NO MORE GENERIC RESUMES</span>
+        <span class="marquee__item">NO MORE FORGOTTEN FOLLOW-UPS</span>
+        <span class="marquee__item">NO MORE 40 TABS OF JOB BOARDS</span>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section__head">
+        <p class="eyebrow">QUESTIONS</p>
+        <h2 class="section__title">STILL WONDERING?</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-item__q">
+            What do you need from me to start?
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a">Your name, phone number, your current resume, and a description of the job you're after &mdash; title, seniority, industry, location, whatever narrows it down.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            Will every resume actually be different?
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a">Yes. Each application is tailored against that specific listing's requirements and language, not a single template reused across every submission.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            Do I review applications before they go out?
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a">Approval controls are part of the plan &mdash; the exact setup will be confirmed as we get closer to launch. Waitlist members get the first say.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q">
+            When does this launch?
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq-item__a">We're building now. Waitlist members get early access before anyone else, plus a say in what ships first.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-block" id="waitlist">
+      <h2 class="cta-block__title">STOP JOB HUNTING.<br />START JOB SKIPPING.</h2>
+      <p class="cta-block__sub">Join the waitlist. Be first in line when we open the doors.</p>
+
+      <form class="waitlist-form waitlist-form--cta" data-waitlist-form>
+        <label class="sr-only" for="cta-email">Email address</label>
+        <input
+          id="cta-email"
+          class="waitlist-form__input waitlist-form__input--invert"
+          type="email"
+          name="email"
+          placeholder="YOUR@EMAIL.COM"
+          required
+          autocomplete="email"
+        />
+        <button type="submit" class="btn btn--invert waitlist-form__submit">
+          Join the waitlist
+        </button>
+      </form>
+      <p class="waitlist-form__note waitlist-form__note--invert" data-waitlist-note>No spam. One email when we launch. That's it.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="Resume Skip logo" class="footer__logo" />
+      <span>RESUME<span class="nav__brand-accent">SKIP</span></span>
+    </div>
+    <p class="footer__copy">&copy; <span data-year></span> Resume Skip. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
